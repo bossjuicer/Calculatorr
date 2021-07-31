@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="main.js"></script>
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+	<title>Calculator</title>
+	<style type="text/css">
+		
+		@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+	</style>
+</head>
+<body>
+	
+	<div id="main">
+      <table>
+        <tr>
+          <input type="text" name="" id="input" disabled="">
+          
+        </tr>
+        <tr>
+          <td><button onclick="allClear()">C</button></td>
+          <td><button onclick="getInput('%')">%</button></td>
+          <td><button onclick="deleteChar()" id="back"><i class="fas fa-backspace"></i></button></td>
+          <td><button onclick="getInput('/')">/</button></td>
+        </tr>
+        <tr>
+          <td><button onclick="getInput('7')" >7</button></td>
+          <td><button onclick="getInput('8')" >8</button></td>
+          <td><button onclick="getInput('9')" >9</button></td>
+          <td><button onclick="getInput('*')" >x</button></td>
+        </tr>
+        <tr>
+          <td><button onclick="getInput('4')" >4</button></td>
+          <td><button onclick="getInput('5')" >5</button></td>
+          <td><button onclick="getInput('6')" >6</button></td>
+          <td><button onclick="getInput('-')" >-</button></td>
+        </tr>
+        <tr>
+          <td><button onclick="getInput('1')" >1</button></td>
+          <td><button onclick="getInput('2')" >2</button></td>
+          <td><button onclick="getInput('3')" >3</button></td>
+          <td><button onclick="getInput('+')" >+</button></td>
+        </tr>
+        <tr>
+          <td><button onclick="getInput('0')" >0</button></td>
+          <td><button onclick="getInput('00')" >00</button></td>
+          <td><button onclick="getInput('.')" >.</button></td>
+          <td><button onclick="getResult()" class="equal">=</button></td>
+        </tr>
+        
+
+        <!-- <tr><input type="text" name="" id="result"></tr> -->
+      </table>
+    </div>
+
+</body>
+</html>
